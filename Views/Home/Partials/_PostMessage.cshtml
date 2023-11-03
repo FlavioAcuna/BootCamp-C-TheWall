@@ -1,0 +1,16 @@
+@model Message
+<div class="container">
+    <div class="row">
+        <h3>Post a Message</h3>
+    </div>
+    <div class="row form-group">
+        <form asp-action="AddMessage" asp-controller="Home" method="post">
+            <textarea asp-for="MessageText" class="form-control" rows="5"></textarea>
+            <span asp-validation-for="MessageText"></span>
+            <div class="d-flex justify-content-end mt-3">
+                <button type="submit" class="btn btn-success">Post</button>
+            </div>
+        </form>
+    </div>
+
+</div>

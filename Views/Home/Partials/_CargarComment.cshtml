@@ -1,0 +1,24 @@
+@model List<Comment>
+@{
+    int? UserId = Context.Session.GetInt32("UserId");
+}
+@foreach (Comment com in Model)
+{
+    <div class="row ms-2">
+        <h3>@com.CommentUser.FirstName @com.CommentUser.LastName - @com.CreatedAt.ToString("MMM dd,yyyy") <span>
+                @if (com.UserId == UserId)
+                {
+                    <a class="text-danger no-link" asp-action="DeletComment" asp-controller="Home" method="Post"
+                        asp-route-ComID="@com.CommentId">
+                        <small>
+                            Eliminar
+                        </small>
+                    </a>
+                }
+            </span>
+        </h3>
+    </div>
+    <div class="row ms-5">
+        <p class="h-6">@com.CommentText</p>
+    </div>
+}

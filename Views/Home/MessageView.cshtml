@@ -1,0 +1,4 @@
+@model TheWallViewModel
+@await Html.PartialAsync("Partials/_NavBar")
+@await Html.PartialAsync("Partials/_PostMessage", Model.newMsg)
+@await Html.PartialAsync("Partials/_CargarMsg")

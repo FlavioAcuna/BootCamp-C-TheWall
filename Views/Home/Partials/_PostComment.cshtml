@@ -1,0 +1,16 @@
+@model Comment
+<div class="container">
+    <div class="row">
+        <h4>Post a Comment</h4>
+    </div>
+    <div class="row form-group">
+        <form asp-action="AddComment" asp-controller="Home" method="post">
+            <textarea asp-for="CommentText" class="form-control" rows="2"></textarea>
+            <span asp-validation-for="CommentText"></span>
+            <div class="d-flex justify-content-end mt-3">
+                <button type="submit" class="btn btn-primary">Comment</button>
+            </div>
+        </form>
+    </div>
+
+</div>

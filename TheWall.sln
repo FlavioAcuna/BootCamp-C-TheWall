@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheWall", "TheWall.csproj", "{C5CC878D-DB10-439A-8A61-26D2BE21BBBE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5CC878D-DB10-439A-8A61-26D2BE21BBBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5CC878D-DB10-439A-8A61-26D2BE21BBBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5CC878D-DB10-439A-8A61-26D2BE21BBBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5CC878D-DB10-439A-8A61-26D2BE21BBBE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5F1021B8-09D1-40A3-ABB1-4BF6FEEC7E4F}
+	EndGlobalSection
+EndGlobal
